@@ -1,4 +1,11 @@
-import { About, Home, ProductDetail, ProductSearch, Products } from "../pages";
+import {
+  About,
+  Categories,
+  Home,
+  ProductDetail,
+  ProductSearch,
+  Products,
+} from "../pages";
 
 const routes = [
   { title: "Home", element: Home, path: "/", isNav: true },
@@ -12,9 +19,15 @@ const routes = [
   },
   {
     title: "Product Search",
-    path: "search",
+    path: "/search",
     element: ProductSearch,
     isNav: false,
+  },
+  {
+    title: "Categories",
+    path: "/categories",
+    element: Categories,
+    isNav: true,
   },
 ];
 
