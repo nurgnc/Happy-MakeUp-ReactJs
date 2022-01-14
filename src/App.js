@@ -1,12 +1,17 @@
 import { Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+//routes data
 import routes from "./data/routes";
+import { theme } from "./styles/theme";
 import { Navbar, Footer } from "./base";
 //css
 import { Container } from "./styles/baseStyle";
+import GlobalStyles from "./styles/Global";
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <Navbar />
       <Container>
         <Routes>
@@ -16,7 +21,7 @@ function App() {
         </Routes>
       </Container>
       <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 

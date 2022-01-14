@@ -1,21 +1,27 @@
 import styled, { css } from "styled-components";
 
-const ContainerFluid = styled.div`
+export const ContainerFluid = styled.div`
   width: 100%;
   margin: 0;
 `;
 
-const Container = styled.div`
-  width: 80%;
-  padding: 10px;
+export const Container = styled.div`
+  width: 1200px;
+  max-width: 100%;
+  padding: 0.75rem;
   margin: 0 auto;
 `;
 
-const FlexRowBetween = styled.div`
+export const Flex = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  width: 30%;
+  & > div,
+  & > ul {
+    flex: 1;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
-
-export { ContainerFluid, Container, FlexRowBetween };
