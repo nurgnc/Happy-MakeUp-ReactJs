@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 //route data
 import routes from "../data/routes";
 //css
@@ -10,7 +11,9 @@ const Navbar = () => {
   return (
     <ContainerFluid>
       <Nav>
-        <Logo src={logo} alt="logo" />
+        <Link to="/">
+          <Logo src={logo} alt="logo" />
+        </Link>
 
         <Flex>
           {routes

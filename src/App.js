@@ -5,7 +5,6 @@ import routes from "./data/routes";
 import { theme } from "./styles/theme";
 import { Navbar, Footer } from "./base";
 //css
-import { Container } from "./styles/baseStyle";
 import GlobalStyles from "./styles/Global";
 
 function App() {
@@ -13,13 +12,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Navbar />
-      <Container>
-        <Routes>
-          {routes.map((item, index) => (
-            <Route key={index} path={item.path} element={<item.element />} />
-          ))}
-        </Routes>
-      </Container>
+
+      <Routes>
+        {routes.map((item, index) => (
+          <Route key={index} path={item.path} element={<item.element />} />
+        ))}
+      </Routes>
+
       <Footer />
     </ThemeProvider>
   );

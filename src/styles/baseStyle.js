@@ -25,3 +25,8 @@ export const Flex = styled.div`
     text-align: center;
   }
 `;
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+`;

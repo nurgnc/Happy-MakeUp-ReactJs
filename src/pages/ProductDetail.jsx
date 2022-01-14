@@ -1,4 +1,5 @@
-const ProductDetail = () => {
+const ProductDetail = (props) => {
+  console.log(props);
   return <h1>ProductDetail</h1>;
 };
 

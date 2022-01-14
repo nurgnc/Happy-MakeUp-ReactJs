@@ -4,8 +4,7 @@ export const FooterStyled = styled.footer`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 3rem;
-  margin-top: 40px;
+  padding: 0 8rem;
   background-color: ${({ theme }) => theme.colors.navBg};
   color: ${({ theme }) => theme.colors.textColor};
 
