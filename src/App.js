@@ -12,13 +12,11 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Navbar />
-
       <Routes>
         {routes.map((item, index) => (
           <Route key={index} path={item.path} element={<item.element />} />
         ))}
       </Routes>
-
       <Footer />
     </ThemeProvider>
   );

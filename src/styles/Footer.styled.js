@@ -7,6 +7,7 @@ export const FooterStyled = styled.footer`
   padding: 0 8rem;
   background-color: ${({ theme }) => theme.colors.navBg};
   color: ${({ theme }) => theme.colors.textColor};
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;

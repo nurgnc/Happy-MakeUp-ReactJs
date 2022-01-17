@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 0 8rem;
-  background-color: ${({ theme }) => theme.colors.navBg};
+  background: ${({ theme }) => theme.colors.navBg};
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
   }

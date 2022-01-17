@@ -7,10 +7,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    // background: url(${bg});
-    // background-size: cover;
-    // background-attachment: fixed;
-    // height: 18rem;
+    // background: ${({ theme }) => theme.colors.navBg};
     font-family: 'Poppins', sans-serif;
     font-size: 1.15em;
     margin: 0;

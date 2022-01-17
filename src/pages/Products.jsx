@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 //api
 import { BASE_URL } from "../data/api";
-//loading
-import loadingVid from "../img/loading.mp4";
 //css
 import { Container, Grid } from "../styles/baseStyle";
 
@@ -21,11 +19,7 @@ const Products = () => {
   }, []);
 
   if (loading) {
-    return (
-      <video width="320" height="240">
-        <source src={loadingVid} type="video/mp4" />
-      </video>
-    );
+    return <h1>Loading...</h1>;
   }
   return (
     <Container>

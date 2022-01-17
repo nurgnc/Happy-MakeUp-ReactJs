@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import bg from "../img/banner.png";
 
 export const ContainerFluid = styled.div`
   width: 100%;
@@ -29,4 +30,13 @@ export const Flex = styled.div`
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
+`;
+
+export const HomeWrapper = styled.div`
+  // background-image: url(${bg});
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // height: 60rem;
+  // opacity: 0.5;
 `;
